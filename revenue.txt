@@ -1,0 +1,51 @@
+facility foreign key DROP DOWN
+date_from
+date_to
+capacity
+num_reservation
+total_hrs
+
+
+Table
+	transaction_booking
+	
+		+id --- pk 
+		+transaction_date --- date&time   ======== time stamp
+		event_name ---------- varchar     ======== textfield
+		customer_name ------- varchar     ======== textfield
+		num_attendies ------- int         ======== numberinput
+		facility ------------ varchar fk  ======== dropdown
+		start_date ---------- date&time   ======== datetime-local
+		end_date ------------ date&time   ======== datetime-local
+
+	transaction_onsite
+		+id --- pk
+		event_name --------- varchar fk  ======== dropdown
+		facility ----------- varchar     ======== textfield/disable
+		customer_name ------ varchar     ======== dropdown
+		timein ------------- date&time   ======== time stamp/button
+		timeout ------------ date&time   ======== time stamp/button
+		add_payment -------- double      ======== numberinput
+
+per page
+	transaction_booking( restrictions to calendar should be apply)
+		pg1 --- 1.Input Cutomer name +cutsomer_name	
+			2.Choose Facility +facility
+			3.Select Date From +start_date To +end_date
+			4.Click Book -cutsomer_name=getsession
+
+	transaction_onsite
+		pg1 --- 1.Choose Eventname +event_name 
+			2.Display Details
+			3.Choose Customer Name +customer_name
+			4.Click Timein +timein
+
+	(Update)pg2 --- 1.Choose Customer Name +customer_name (search +customer_name)
+			2.Click Time-out +timeout
+				- +add_payment (if end_date < timeout) +charge:facilit_mainrules_set
+
+
+			
+
+
+	

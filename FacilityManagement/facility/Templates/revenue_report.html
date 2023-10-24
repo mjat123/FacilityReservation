@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Main Rules</title>
+  <link rel="icon" href="{% static 'icon/favicon3.ico' %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'facility/general.css' %}">
+  <!-- <link rel="stylesheet" href="general.css">
+  <link rel="stylesheet" href="table.css"> -->
+  <style>
+  form.modal-dialog{
+  right: -12%;
+}
+select#inputGroupSelect01 {
+    padding: 10px; /* Adjust the padding to change the text box's width */
+    font-size: 16px; /* Adjust the font size */
+    width: 236px;
+    height: 39px;
+    fill: #FFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.50);
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+  }
+
+  select{
+    border-radius: 4px 4px 4px 4px;
+    border: 0.5px solid rgba(0, 0, 0, 0.80);
+
+
+  }
+
+
+  select#inputGroupSelect01::-ms-value::-arrow {
+    color: #ffcc01;
+  }
+  input[type=datetime-local]{
+  /* box-sizing: border-box; */
+  width: 236px;
+  height: 39px;
+  fill: #FFF; 
+  stroke-width: 1px; 
+  stroke: #E0E0E0;
+  margin-top: 2rem;
+}
+  </style>
+</head>
+<body>
+<!-- -----------------------------------------------ADD RULES--------------------------------------------- -->
+
+<!-- ---------------------------------------------- Calendar ----------------------------------------------------------- -->
+
+    <div class="label-page" >Revenue Reports</div>
+    <div class="table">
+        <div class="menu">
+            <select class="custom-select" id="inputGroupSelect01" style="margin-top: 2rem; padding: 2px;">
+              <option value="0">CHOOSE FACILITY</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <label style="margin-left: 3%; color: #606060; font-size: 20px; font-weight: 700; line-height: normal;">From:</label>
+            <input type="datetime-local" style="margin-left:5px">
+            <label style="margin-left: 2%; color: #606060; font-size: 20px; font-weight: 700; line-height: normal;">From:</label>
+            <input type="datetime-local" style="margin-left:5px">
+            <button style="margin-left: 2%;">Proceed</button>
+        </div>
+        <br>
+        <a href="#" style="margin-left: 80%; text-decoration: underline; color: #3C3C3C; opacity: 0.8;">🖨️Statement of Revenue</a>
+        <div style="margin-top: -3%;">
+            <table class="center" cellspacing="2" style="margin-top: 3rem; width: max-width; height: 200px; overflow-y: auto;">
+                <thead>
+                  <tr>
+                    <th>FACILITY</th>
+                    <th>CAPACITY</th>
+                    <th>NUMBER OF RESERVATIONS</th>
+                    <th>TOTAL HOURS</th>
+                    <th>FACILITY REVENUE</th>
+                  </tr>
+                </thead>
+                <tbody style="height: 1px;">
+                    <tr>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bolder; font-weight: 700; font-size: 20px;">TOTAL</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>₱000.00</td>
+                    </tr>
+                </tbody>
+                </table>
+        </div>
+        <br>
+        <div style="margin-top: 2rem;">
+            <h5>TRANSACTION HISTORY</h5>
+            <table class="center" cellspacing="2" style="margin-top: 1rem; width: max-width; height: 400px; overflow-y: auto;">
+                <thead>
+                  <tr>
+                    <th>TRANSACTION NUMBER</th>
+                    <th>TRANSACTION DATE</th>
+                    <th>CUSTOMER</th>
+                    <th>FACILITY</th>
+                    <th>TOTAL USAGE HOURS</th>
+                    <th>ADDITIONAL PAYMENTS</th>
+                    <th>TOTAL</th>
+                  </tr>
+                </thead>
+                <tbody style="height: 1px;">
+                    <tr>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                    </tr>                    <tr>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                    </tr>
+                    <tr>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                        <td>asdasdas</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bolder; font-weight: 700; font-size: 20px; position: sticky;">TOTAL</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                        
+                        <td>₱000.00</td>
+                    </tr>
+                </tbody>
+                </table>
+        </div>
+    </div>
+
+<!-- ----------------------------------------------FACILITY RULES----------------------------------------------------------- -->
+  <nav class="vertical">
+    <div class="avatar">
+      <img src="{% static 'media/avatar1.png' %}" alt="Profile Picture">
+    </div>
+    <ul>
+      <li>
+        <ul>
+        </ul>
+      </li>
+      <li><a href="#" class="nav1" style=" background-color: #ffcc01; color: black;">Facility Management</a>
+
+        <ul class="drpdwn1">
+          <li><a href="{% url 'facility:facility' %}" class="drp1" >Facility</a></li>
+          <li><a href="#" class="drp1">User</a></li>
+          <li><a href="{% url 'facility:calendar' %}" class="drp1" style=" background-color: #ffcc01; color: black;">Calendar</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="nav2">Revenue</a>
+        <ul class="drpdwn2">
+          <li><a href="#" class="drp2">Dashboard</a></li>
+          <li><a href="#" class="drp2">Reports</a></li>
+        </ul></li>
+      <li><a href="{% url 'facility:settingfacility' %}" class="nav3">Setting</a></li>
+    </ul>
+  </nav>
+  <!-- horizontal pane for navbar -->
+  <nav class="horizontal">
+    <ul class="left">
+      <li><a href="#"><img src="{% static 'media/WILMS.png' %}" alt="Home"></a></li>
+    </ul>
+    <ul class="center" style="position: sticky; margin-left: 35%; margin-top: 2rem;">
+      
+            {% if messages %}
+              {% for message in messages %}
+                  <li{% if message.tags %} class="{{ message.tags }}"{% endif %} style="background: #FFFFFF; color: #000000; padding: 10px;   border-radius: 10px; border: 2px solid greenyellow;
+                  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);">{{ message }}</li>
+              {% endfor %}
+              {% endif %}
+      
+      <!-- <li>
+      <input type="text" class="search-bar"placeholder="Search...">
+      <button type="submit" class="search-btn">Search</button></li> -->
+      <li></li>
+    </ul>
+    <ul class="right">
+      <a href="#"><button class="adminlabel">admin</button></a>
+    </ul>
+    
+  </nav> 
+</body>
+</html>
